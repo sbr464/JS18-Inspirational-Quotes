@@ -1,0 +1,47 @@
+.logo {
+  width: 100px;
+  margin-left: -12px;
+  margin-top: -20px;
+}
+
+.navbar-fixed-top {
+    min-height: 75px;
+}
+
+.navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 75px;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav > li > a {
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;}
+}
+
+.form1 {
+  padding: 15px;
+}
+
+.output { 
+  background-color: #ecf0f1;
+  min-height: 1000px;
+  padding: 15px;
+}
+
+textarea {
+resize: none;
+}
+
+.quoteAuthor {
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+
+.quoteText {
+
+}
