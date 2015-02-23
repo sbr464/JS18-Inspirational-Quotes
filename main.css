@@ -35,13 +35,92 @@ textarea {
 resize: none;
 }
 
-.quoteAuthor {
-  font-size: 12px;
-  font-style: italic;
-  margin-bottom: 25px;
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating:hover {
+  cursor: pointer;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.5em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
 }
 
+.quote-container {
+  position: relative;
+  background-color: white;
+  width: 100%px;
+  min-height: 250px;
+  margin-bottom: 15px;
+}
 
-.quoteText {
+.remove-quote {
+    width: 34px;
+    position: absolute;
+    right: -14px;
+    top: -13px;
+    cursor: pointer;
+}
+
+.remove-quote:hover {
+  opacity: .7;
+}
+
+.quotation-mark {
+    width: 100px;
+    position: absolute;
+    left: 19px;
+    top: 14px;
+}
+
+.rating-box {
+  position: absolute;
+  right: 40px;
+  bottom: 32px;
+}
+
+.quote-text {
+  padding: 45px;
+  font-size: 22px;
+  font-style: italic;
+  color: black;
+}
+
+.author-text {
+  text-align: right;
+  padding-right: 55px;
+  font-size: 14px;
+  color: #ccc;
+  padding-bottom: 40px;
+}
+
+.featured {
+  position: absolute;
+  top: 180px;
+  left: -11px;
+  display: none;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.featured:hover {
+  opacity: 1.0;
+}
+
+.featuredon {
+  display: block;
+  opacity: 1.0;
+  position: absolute;
+  top: 180px;
+  left: -11px;
+  cursor: pointer;
 
 }
